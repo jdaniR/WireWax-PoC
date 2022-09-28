@@ -1,0 +1,242 @@
+.sort-placer {
+    border: 2px solid orange;
+}
+
+
+/* Start: Hotspot on editor */
+
+.hotspot {
+    left: 109px;
+    top: 93px;
+    display: block;
+    position: absolute;
+    border: 16px solid rgba(204, 0, 0, 0.3);
+    border-radius: 100%;
+    box-shadow: 0 0 0 1px rgba(204, 0, 0, 0.6);
+    content: "";
+    cursor: pointer;
+    height: 7px;
+    opacity: 1;
+    transition: border 300ms ease 0s, visibility 300ms ease 0s, opacity 300ms ease 0s;
+    visibility: visible;
+    width: 7px;
+    z-index: 1000;
+}
+
+.caption {
+    left: 120px;
+    top: 25px;
+    display: block;
+    position: relative;
+    border: #2b2d2f 1px solid;
+    color: black;
+    font-weight: bold;
+    padding: 15px 0;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.caption:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 0;
+    z-index: 1000;
+    border-top: 30px solid #2b2d2f;
+    border-right: 20px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+.caption:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #2b2d2f;
+    background-color: transparent;
+}
+
+
+/* End: Hotspot on editor */
+
+
+/* Start: Form CSS */
+
+form {
+    padding: 15px 30px;
+    background: #F0F8FF;
+    display: none;
+}
+
+#formButton {
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #2b2d2f;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+#formButton:hover {
+    background: #ABB0B8;
+    text-decoration: none;
+}
+
+b {
+    color: #2b2d2f;
+}
+
+#submit {
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    background: #2b2d2f;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#submit:hover {
+    background: #2b2d2f;
+    text-decoration: none;
+}
+
+
+/* End: Form CSS */
+
+video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    position: absolute;
+    width: 78%;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 9;
+    mix-blend-mode: overlay;
+}
+
+.poc-header {
+    color: white;
+}
+
+.canvas {
+    background-color: rgba(178, 190, 181, 0.5);
+    width: 78%;
+    position: absolute;
+    height: 38%;
+}
+
+.video-container-wrapper {
+    display: flex;
+    max-height: 100%;
+}
+
+#videoContainer {
+    max-height: 100%;
+}
+
+.canvas-container {
+    z-index: 10;
+    /* width: 100%;
+    position: absolute;
+    height: 100%;
+    object-fit: cover; */
+}
+
+.video-forms {
+    height: 40%;
+    position: relative;
+}
+
+.form-wrapper {
+    height: 40%;
+    position: absolute;
+    top: 73%;
+}
+
+.poc-heading {
+    padding: 0 0 0 2rem;
+}
+
+.tool {
+    cursor: pointer;
+    color: white;
+}
+
+.link-comp-edit {
+    color: black !important;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+.fa-link {
+    font-size: 20px;
+}
+
+.fa-link:before {
+    content: ”\f0c1″;
+    font-family: “Font Awesome 5 Free;
+    font-weight: 900;
+}
+
+.draggable-btn,
+.caption {
+    border: #2b2d2f 1px solid;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: transparent !important;
+    font-weight: bold;
+}
+
+
+/* Font Awesine */
+
+.fa-edit:before,
+.fa-pencil-square-o:before {
+    content: "\f044";
+    padding-right: 10px;
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+.border-top {
+    border-top: 1px solid #DFE3E8 !important;
+    width: auto;
+    margin-right: 22px;
+}
+
+.btn-light-success {
+    border: #DFE3E8 1px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+}

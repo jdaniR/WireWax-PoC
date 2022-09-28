@@ -1,0 +1,35 @@
+<!-- Sidebar -->
+<nav class="navbar-vertical navbar">
+    <div class="nav-scroller">
+        <!-- Brand logo -->
+        <a class="navbar-brand" href="@@webRoot/index.html">
+            <h2 class="poc-header">WireWax</h2>
+        </a>
+        <!-- Navbar nav -->
+        <ul class="navbar-nav flex-column tools" id="sideNavbar">
+            <li class="nav-item">
+                <a class="nav-link has-arrow @@if (context.page === 'dashboard') { active }" href="@@webRoot/index.html">
+                    <i data-feather="home" class="nav-icon icon-xs me-2"></i> Elements
+                </a>
+            </li>
+            <li class="border-top my-3"></li>
+            <!-- Nav item -->
+            <li class="nav-item tool tool-1"><span>&#128279; </span>Link</li>
+            <li class="border-top my-3"></li>
+            <li class="nav-item tool tool-2"><span>&#9737; </span>Button</li>
+            <li class="border-top my-3"></li>
+            <li class="nav-item tool tool-3"><span>&#8461;</span> Hotspot</li>
+            <li class="border-top my-3"></li>
+            <li class="nav-item tool tool-3">
+                <button id="previewVideo" class="init-button btn-light-success" id="initialize">
+          Initialise DB
+        </button>
+                <li class="border-top my-3"></li>
+                <li class="nav-item tool tool-3">
+
+                    <button class="copy-code init-button btn-light-success" id="copy-code">Embeded Video Code</button>
+                </li>
+            </li>
+        </ul>
+    </div>
+</nav>

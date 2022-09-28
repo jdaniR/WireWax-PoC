@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("partials/head.html")
+    <title>WireWax PoC</title>
+</head>
+
+<body class="bg-light">
+    <div id="db-wrapper">
+        @@include("partials/modal.html")
+        <!-- navbar vertical -->
+        @@include('partials/navbar-vertical.html', { "page": "dashboard", })
+        <!-- Page content -->
+        <div id="page-content">
+            @@include("partials/header.html")
+            <!-- Container fluid -->
+            <h2 class="mb-0 text-black pb-5 pt-5 poc-heading">WireWax PoC</h2>
+
+            <div class="pt-10 pb-15"></div>
+            <div class="container-fluid mt-n22 px-6">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <!-- Page header -->
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="mb-2 mb-lg-0"></div>
+                            </div>
+                            <div class="video-container-wrapper">
+                                <div id="videoContainer">
+                                    <div id="caption" class="caption"></div>
+                                    <div id="hotspot" class="hotspot"></div>
+                                    <video id="video" controls>
+                      <!--video id="video" playsinline autoplay muted loop-->
+                      <source
+                        src="https://www.w3schools.com/html/mov_bbb.mp4"
+                        type="video/mp4"
+                      />
+                      <source
+                        src="https://www.w3schools.com/html/mov_bbb.ogg"
+                        type="video"
+                      />
+                      Your browser does not support the video tag. I suggest you
+                      upgrade your browser.
+                    </video>
+                                </div>
+                            </div>
+
+                            <div class="canvas-container">
+                                <div class="canvas"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @@include("partials/forms.html")
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    @@include("partials/scripts.html")
+    <script type="text/javascript">
+        ;
+        (function($) {
+            $(window).bind("load", init)
+        })($)
+    </script>
+</body>
+
+</html>
